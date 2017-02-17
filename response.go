@@ -9,6 +9,7 @@ func main(){
 
 
 func foo(w http.ResponseWriter, req *http.Request){
-	w.Header().Set("Server", "A GO web Server")
-	w.WriteHeader(200)
+	//w.Header().Set("Server", "A GO web Server")
+	//w.WriteHeader(200)
+	w.Write([]byte("OK"))
 }
