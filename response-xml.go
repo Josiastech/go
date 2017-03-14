@@ -16,7 +16,7 @@ func main() {
 }
 
 func foo(w http.ResponseWriter, r *http.Request) {
-	profile := Profile{"Alex", []string{"snowboarding", "programming"}}
+	profile := Profile{"Josias", []string{"snowboarding", "programming"}}
 
 	x, err := xml.MarshalIndent(profile, "", "  ")
 	if err != nil {
